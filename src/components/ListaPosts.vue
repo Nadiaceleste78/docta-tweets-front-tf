@@ -1,6 +1,8 @@
 <template>
     <div>
-    
+        <div v-for='post in posts' :key='post._id'>
+        <post @likePost='likePost' @deletePost='deletePost'/>
+    </div>
     </div>
 </template>
 
